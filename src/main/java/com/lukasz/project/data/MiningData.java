@@ -1,0 +1,39 @@
+package com.lukasz.project.data;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+import java.util.Map;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "mining")
+public class MiningData {
+
+    @Id
+    @GeneratedValue
+    @Column(name = "_id")
+    private Integer id;
+
+    @Column(name = "_rok")
+    private Integer year;
+
+    @Column(name = "produkcja_sprzedana")
+    private BigDecimal produkcjaSprzedana;
+
+    @Column(name = "przecietne_zatrudnienie")
+    private BigDecimal przecietneZatrudnienie;
+
+    @Column(name = "wydajnosc_pracy")
+    private BigDecimal wydajnoscPracy;
+
+    @Column(name = "przecietne_wynagrodzenia")
+    private BigDecimal przecietneWynagrodzenia;
+}
