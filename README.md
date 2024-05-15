@@ -1,5 +1,5 @@
 # Project: Data Compilation on the Development of Industry and the State of the Natural Environment in Poland
-
+Frontend : https://github.com/iamruppert/statistics-app-front
 ## Project Description
 The project aims to create a web application that visualizes and compiles data on the state of the natural environment and 
 industrial development. The data has been carefully selected to convey the desired information effectively. Users can access 
